@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .menu-container {
+            width: 200px;
+            background-color: aqua;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .menu-container tr:first-child {
+            background-color: green;
+            color: white;
+        }
+        .menu-container td {
+            padding: 10px;
+            text-align: center;
+        }
+        .menu-container td a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+        .menu-container td a:hover {
+            color: blue;
+        }
+        .content {
+            flex-grow: 1;
+            margin: 10px;
+        }
+        iframe {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <table>
+            <tr>
+                <td>Menu</td>
+            </tr>
+            <tr>
+                <td><a href="Biodataa.html" target="konten">Biodata</a></td>
+            </tr>
+            <tr>
+                <td><a href="galleri.html" target="gallery">Gallery</a></td>
+            </tr>
+            <tr>
+                <td><a href="medsos.html" target="daftarmedsos">Daftar Medsos</a></td>
+            </tr>
+            <tr>
+                <td><a href="jadwalkuliah.html" target="jadwalkuliah">Jadwal Kuliah</a></td>
+            </tr>
+            <tr>
+                <td><a href="Daftarmakanan.html" target="konten">Daftar Makanan</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <iframe name="konten" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
